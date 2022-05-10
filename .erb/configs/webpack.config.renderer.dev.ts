@@ -40,11 +40,13 @@ if (
 }
 
 const configuration: webpack.Configuration = {
+  externals: ['serialport'],
+
   devtool: 'inline-source-map',
 
   mode: 'development',
 
-  target: ['web', 'electron-renderer'],
+  target: 'electron-renderer',
 
   entry: [
     `webpack-dev-server/client?http://localhost:${port}/dist`,
@@ -56,9 +58,9 @@ const configuration: webpack.Configuration = {
     path: webpackPaths.distRendererPath,
     publicPath: '/',
     filename: 'renderer.dev.js',
-    library: {
-      type: 'umd',
-    },
+    // library: {
+    //   type: 'umd',
+    // },
   },
 
   module: {

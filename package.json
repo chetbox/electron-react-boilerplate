@@ -169,6 +169,7 @@
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "@types/react-test-renderer": "^17.0.1",
+    "@types/tableify": "^1.1.1",
     "@types/terser-webpack-plugin": "^5.0.4",
     "@types/webpack-bundle-analyzer": "^4.4.1",
     "@types/webpack-env": "^1.16.3",
@@ -235,7 +236,9 @@
     "history": "^5.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "serialport": "^10.4.0",
+    "tableify": "^1.1.1"
   },
   "devEngines": {
     "node": ">=14.x",
